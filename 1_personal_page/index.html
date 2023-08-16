@@ -5,29 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Page</title>
     <link rel="icon" href="assets\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
     <header>
-        <h1>Portifolio</h1>
-        <nav>
+        <h1 id="header_title">That's a page about me, and only me.</h1>
+        <nav class="header_nav">
             <a href="#aboutme">About me</a>
             <a href="#work">Work</a>
             <a href="#project">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <aside>
+    <aside class="sidebar">
         <img src="assets\myself.png" alt="Myself">
         <p>Caio Broering Pinho</p>
         <p>Information Systems</p>
     </aside>
     <main>
-        <section id="aboutme">
+        <section id="aboutme" class="information">
             <h1>About Me:</h1>
             <p>Bom dia! Meu nome é Caio Broering Pinho e sou um entusiasta da programação e da tecnologia. Atualmente, estou cursando Sistemas de Informação na UFSC (Universidade Federal de Santa Catarina), com o objetivo de aprimorar meus conhecimentos na área de tecnologia e conectar-me com pessoas que compartilham do mesmo interesse.</p>
             <p>Minha paixão pela programação me levou a explorar diferentes projetos pessoais que foram hospedados em meu repositório do GitHub. Entre esses projetos, criei desde simuladores de gravidade até jogos como o da cobrinha e flappy bird, implementando até mesmo inteligência artificial para tornar essas experiências ainda mais envolventes.</p>
         </section>
-        <section id="work">
+        <section id="work" class="information">
             <h1>My work experience</h1>
             <article>
                 <h2>Department of Foreign Languages and Literature at UFSC (DLLE UFSC):</h2>
@@ -51,11 +52,11 @@
     </main>
     <footer>
         <section id="contact">
-            <p>Contact:</p>
-            <p>Email: <a href="mailto:caiopinho9@gmail.com">caiopinho9@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/CaioPinho9" target="_blank">https://github.com/CaioPinho9</a></p>
-            <p>LinkedIn: 
-                <a href="https://www.linkedin.com/in/caio-b-pinho/" target="_blank">
+            <h1 id="footer_title">Contact Information:</h1>
+            <p>Email:<a href="mailto:caiopinho9@gmail.com">caiopinho9@gmail.com</a></p>
+            <p>GitHub:<a rel="noopener" href="https://github.com/CaioPinho9" target="_blank">https://github.com/CaioPinho9</a></p>
+            <p>LinkedIn:
+                <a rel="noopener" href="https://www.linkedin.com/in/caio-b-pinho/" target="_blank">
                     https://www.linkedin.com/in/caio-b-pinho/
                 </a>
             </p>
