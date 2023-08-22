@@ -26,17 +26,8 @@ h1 {
   color: #082847;
 }
 
-h2,
-h3 {
+h2 {
   color: #264769;
-}
-
-.information {
-  background-color: #cadcf4;
-  width: 75%;
-  margin: 5%;
-  padding: 20px;
-  border-radius: 10px;
 }
 
 footer {
@@ -57,10 +48,9 @@ a {
   color: #cadcf4;
 }
 
-ul,
-li {
-  list-style: disc;
-  margin-left: 20px;
+a p {
+  text-decoration: none;
+  color: #000;
 }
 
 header {
@@ -103,8 +93,23 @@ header {
   width: 50%;
 }
 
-.tagSection li,
-p {
+.container {
+  width: 75%;
+  margin: 5%;
+  padding: 20px;
+  border-radius: 10px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  background-color: #cadcf4;
 }
+
+.information {
+  padding: 20px;
+}
+
+.information:hover {
+  border: #082847 solid 3px;
+  border-radius: 10px;
+  padding: 17px;
+}
+
