@@ -26,7 +26,7 @@ h1 {
   color: #082847;
 }
 
-h2 {
+h2, h3 {
   color: #264769;
 }
 
@@ -94,4 +94,10 @@ header {
 
 .sidebar img {
   width: 50%;
+}
+
+
+.tagSection li, p {
+  display: flex;
+  align-items: center;
 }

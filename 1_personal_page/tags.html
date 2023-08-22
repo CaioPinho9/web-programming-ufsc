@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Page</title>
+    <link rel="icon" href="assets\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="header_title">That's a page <strong>NOT</strong> about me!</h1>
+        <nav class="header_nav">
+            <a href="tags.html">Tags</a>
+            <a href="index.html#aboutme">About me</a>
+            <a href="index.html#work">Work</a>
+            <a href="index.html#project">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+    <aside class="sidebar">
+        <img src="assets\myself.png" alt="Myself">
+        <p>Caio Broering Pinho</p>
+        <p>Information Systems</p>
+    </aside>
+    <main>
+        <section class="information tagSection">
+            <h1>Tags Utilizadas</h1>
+            <p>Aqui temos uma lista atualizada dinâmicamente por um script de JavaScript que demostra todas as tags utilizadas nesse projeto:</p>
+            <div id="container_tags"></div>
+        </section>
+        <script>
+            const listContainer = document.getElementById("container_tags");
+
+            listContainer.innerHTML = renderTags(getTags());
+        </script>
+    </main>
+    <footer>
+        <section id="contact">
+            <h1 id="footer_title">Contact Information:</h1>
+            <p>Email:<a href="mailto:caiopinho9@gmail.com">caiopinho9@gmail.com</a></p>
+            <p>GitHub:<a rel="noopener" href="https://github.com/CaioPinho9" target="_blank">https://github.com/CaioPinho9</a></p>
+            <p>LinkedIn:
+                <a rel="noopener" href="https://www.linkedin.com/in/caio-b-pinho/" target="_blank">
+                    https://www.linkedin.com/in/caio-b-pinho/
+                </a>
+            </p>
+            <p>Please feel free to contact me via the platforms above to discuss exciting projects and opportunities!</p>
+        </section>
+        <address>Florianópolis, Brazil</address>
+    </footer>
+</body>
+</html>
