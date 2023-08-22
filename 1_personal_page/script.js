@@ -1,72 +1,73 @@
 const htmlTagsDictionary = {
-    // Estrutura Básica
-    'html': 'Define o início de um documento HTML.',
-    'head': 'Contém informações de metadados do documento.',
-    'title': 'Define o título do documento exibido na aba ou barra de título do navegador.',
-    'body': 'Contém o conteúdo visível do documento.',
+    // Basic Structure
+    'html': 'Defines the beginning of an HTML document.',
+    'head': 'Contains metadata information for the document.',
+    'title': 'Defines the title of the document displayed in the browser tab or title bar.',
+    'body': 'Contains the visible content of the document.',
 
-    // Texto
-    'p': 'Define um parágrafo de texto.',
-    'h1': 'Define títulos de diferentes níveis.',
-    'h2': 'Define títulos de diferentes níveis.',
-    'h3': 'Define títulos de diferentes níveis.',
-    'h4': 'Define títulos de diferentes níveis.',
-    'h5': 'Define títulos de diferentes níveis.',
-    'h6': 'Define títulos de diferentes níveis.',
-    'a': 'Cria um link para outra página ou recurso.',
-    'strong': 'Define um texto importante com ênfase forte.',
-    'em': 'Define um texto enfatizado, normalmente exibido em itálico.',
-    'span': 'Define uma pequena seção de texto.',
+    // Text
+    'p': 'Defines a paragraph of text.',
+    'h1': 'Defines headings of different levels.',
+    'h2': 'Defines headings of different levels.',
+    'h3': 'Defines headings of different levels.',
+    'h4': 'Defines headings of different levels.',
+    'h5': 'Defines headings of different levels.',
+    'h6': 'Defines headings of different levels.',
+    'a': 'Creates a link to another page or resource.',
+    'strong': 'Defines important text with strong emphasis.',
+    'em': 'Defines emphasized text, usually displayed in italics.',
+    'span': 'Defines a small section of text.',
 
-    // Listas
-    'ul': 'Cria uma lista não ordenada.',
-    'ol': 'Cria uma lista ordenada.',
-    'li': 'Define um item de lista em listas ordenadas ou não ordenadas.',
+    // Lists
+    'ul': 'Creates an unordered list.',
+    'ol': 'Creates an ordered list.',
+    'li': 'Defines a list item in ordered or unordered lists.',
 
-    // Definições
-    'dl': 'Cria uma lista de definição.',
-    'dt': 'Define um termo ou item na lista de definição.',
-    'dd': 'Define a descrição de um termo na lista de definição.',
+    // Definitions
+    'dl': 'Creates a definition list.',
+    'dt': 'Defines a term or item in the definition list.',
+    'dd': 'Defines the description of a term in the definition list.',
 
-    // Imagens e Mídia
-    'img': 'Exibe uma imagem.',
-    'audio': 'Incorpora um arquivo de áudio.',
-    'video': 'Incorpora um arquivo de vídeo.',
+    // Images and Media
+    'img': 'Displays an image.',
+    'audio': 'Embeds an audio file.',
+    'video': 'Embeds a video file.',
 
-    // Formulários e Entradas
-    'form': 'Cria um formulário para entrada de dados.',
-    'input': 'Cria um campo de entrada de dados.',
-    'textarea': 'Cria uma área de texto multilinha.',
-    'button': 'Cria um botão clicável.',
-    'select': 'Cria uma lista suspensa de opções.',
-    'option': 'Define uma opção em uma lista suspensa.',
+    // Forms and Inputs
+    'form': 'Creates a form for data input.',
+    'input': 'Creates a data input field.',
+    'textarea': 'Creates a multiline text area.',
+    'button': 'Creates a clickable button.',
+    'select': 'Creates a dropdown list of options.',
+    'option': 'Defines an option in a dropdown list.',
 
-    // Tabelas
-    'table': 'Cria uma tabela.',
-    'tr': 'Define uma linha em uma tabela.',
-    'td': 'Define uma célula de dados em uma tabela.',
-    'th': 'Define uma célula de cabeçalho em uma tabela.',
+    // Tables
+    'table': 'Creates a table.',
+    'tr': 'Defines a row in a table.',
+    'td': 'Defines a data cell in a table.',
+    'th': 'Defines a header cell in a table.',
 
-    // Componentes Estruturais
-    'header': 'Define o cabeçalho da página ou seção.',
-    'nav': 'Define um bloco de navegação.',
-    'section': 'Define uma seção dentro do documento.',
-    'article': 'Define um conteúdo independente, como um post de blog.',
-    'aside': 'Define um conteúdo relacionado, geralmente exibido em barras laterais.',
-    'footer': 'Define o rodapé da página ou seção.',
-    'div': 'Define uma divisão ou seção genérica.',
-    'main': 'Define o conteúdo principal da página.',
+    // Structural Components
+    'header': 'Defines the header of the page or section.',
+    'nav': 'Defines a navigation block.',
+    'section': 'Defines a section within the document.',
+    'article': 'Defines independent content, such as a blog post.',
+    'aside': 'Defines related content, often displayed in sidebars.',
+    'footer': 'Defines the footer of the page or section.',
+    'div': 'Defines a generic division or section.',
+    'main': 'Defines the main content of the page.',
 
-    // Mídia Incorporada
-    'iframe': 'Incorpora um outro documento dentro da página.',
-    'canvas': 'Cria uma área para gráficos desenháveis com JavaScript.',
-    'svg': 'Cria gráficos vetoriais escaláveis.',
+    // Embedded Media
+    'iframe': 'Embeds another document within the page.',
+    'canvas': 'Creates an area for drawable graphics using JavaScript.',
+    'svg': 'Creates scalable vector graphics.',
 
-    // Recursos Externos
-    'link': 'Define a ligação entre um documento e um recurso externo, como uma folha de estilos.',
-    'script': 'Define um script embutido ou um link para um script externo.',
-    'meta': 'Fornece metadados sobre o documento, como descrições e palavras-chave.',
+    // External Resources
+    'link': 'Defines the relationship between a document and an external resource, like a stylesheet.',
+    'script': 'Defines an inline script or a link to an external script.',
+    'meta': 'Provides metadata about the document, such as descriptions and keywords.',
 };
+
 
 function getTags() {
     tags = document.querySelectorAll("*");
