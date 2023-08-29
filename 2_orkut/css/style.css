@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.main_container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 70vmin;
+  padding: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.orkut_description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.descriptions {
+  display: flex;
+}
+
+.orkut_description p {
+  padding: 10px;
+}
+
+.side_bar {
+  display: flex;
+  position: relative;
+  background-color: #e8eefa;
+  justify-self: flex-end;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 25%;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.side_bar .google_logo {
+  position: relative;
+  width: 70px;
+  padding-left: 5px;
+}
+
+.login_information {
+  text-align: center;
+  height: 40%;
+}
+
+.login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login_button {
+  display: flex;
+  margin-left: 30px;
+}
+
+button,
+input {
+  padding: 5px 10px 5px 10px;
+  border: #000 1px solid;
+  box-shadow: #000 2px 2px 1px;
+  outline: #000 1px solid;
+}
+
+button {
+  background-color: #d3d3cb;
+}
+
+.square-checkbox {
+  padding: 5px 10px 5px 10px;
+  border: #000 1px solid;
+  box-shadow: #000 2px 2px 1px;
+  outline: #000 1px solid;
+}
+
+.nao_membro {
+  margin: 15px;
+}
+
+#conta_google {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_container {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+  width: 100%;
+  background-color: #e8eefa;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
