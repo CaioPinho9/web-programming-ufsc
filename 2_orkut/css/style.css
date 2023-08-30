@@ -3,6 +3,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   height: 100%;
+  margin: 0;
 }
 
 .main_container {
@@ -45,12 +46,15 @@ body {
   flex-wrap: wrap;
   padding: 20px;
   justify-content: center;
+  margin-right: 0;
+  padding-right: 0;
 }
 
 .external_container {
   display: flex;
   background-color: #e8eefa;
   padding: 5px;
+  padding-right: 0;
   width: 100%;
   align-items: center;
 }
@@ -64,6 +68,7 @@ body {
 
 .login_information {
   border: 3px #fff solid;
+  border-right: 0;
   padding: 5px;
   text-align: center;
 }
@@ -111,8 +116,9 @@ button:active {
   justify-content: center;
   align-items: center;
   width: 100%;  
-  height: 100%;
+  height: 97%;
   border: 3px #fff solid;
+  border-right: 0;
   text-align: center;
 }
 
