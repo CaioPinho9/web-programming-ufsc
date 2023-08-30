@@ -211,7 +211,7 @@ nav a {
 }
 
 .custom-checkbox input:checked ~ .checkmark {
-  background-color: #416a8b; 
+  background-color: #d3d3cb; 
 }
 
 .checkmark:after {
@@ -229,7 +229,7 @@ nav a {
   top: 1px;
   width: 3px;
   height: 9px;
-  border: solid white;
+  border: solid #000;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
