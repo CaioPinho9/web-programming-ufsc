@@ -126,6 +126,7 @@ button {
   border-bottom: #000 2px solid;
   border-left: #f1f4fb 2px solid;
   border-right: #000 2px solid;
+  outline: 1px #000 solid;
 }
 
 button:active {
