@@ -140,11 +140,9 @@ Mostre no elemento com id "saidaMap" uma lista cujos elementos sejam o quadrado 
 
 <script>
     //adicione aqui o script para resolução do Exercício 10
-    pTags = document.getElementsByTagName("p")
-    let numbers = pTags[13].innerHTML
-    let splitedNumbers = numbers.split(",")
+    let listOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-    let squared = splitedNumbers.map(x => Number(x) ** 2)
+    let squared = listOfNumbers.map(x => Number(x) ** 2)
 
     let saidaMap = document.getElementById("saidaMap")
     saidaMap.innerHTML = squared
@@ -163,10 +161,7 @@ Mostre no elemento com id "saidaFilter" uma lista composta apenas pelos valores 
 
 <script>
     //adicione aqui o script para resolução do Exercício 11
-    let numbersToFilter = pTags[16].innerHTML
-    let splittedToFilter = numbersToFilter.split(',')
-
-    let filtered = splittedToFilter.filter(x => Number(x) % 2 === 0)
+    let filtered = listOfNumbers.filter(x => Number(x) % 2 === 0)
     let saidaFilter = document.getElementById("saidaFilter")
     saidaFilter.innerHTML = filtered
 
@@ -184,10 +179,7 @@ Mostre no elemento com id "saidaFilter" uma lista composta apenas pelos valores 
 
 <script>
     //adicione aqui o script para resolução do Exercício 12
-    let numbersToReduce = pTags[20].innerHTML
-    let splittedToReduce = numbersToReduce.split(',')
-
-    let summed = splittedToReduce.reduce((sum, x) => Number(sum) + Number(x))
+    let summed = listOfNumbers.reduce((sum, x) => Number(sum) + Number(x))
     let saidaReduce = document.getElementById("saidaReduce")
     saidaReduce.innerHTML = summed
 </script>
@@ -204,10 +196,7 @@ Mostre no elemento com id "saidaFilter" uma lista composta apenas pelos valores 
 
 <script>
     //adicione aqui o script para resolução do Exercício 13
-    let numbersSquared42 = pTags[24].innerHTML
-    let splitedNumbersSquared42 = numbersSquared42.split(",")
-
-    let squared42 = splitedNumbersSquared42.map(x => Number(x) ** 2 + 42)
+    let squared42 = listOfNumbers.map(x => Number(x) ** 2 + 42)
 
     let saidaParesAoQuadradoMais42 = document.getElementById("saidaParesAoQuadradoMais42")
     saidaParesAoQuadradoMais42.innerHTML = squared42
