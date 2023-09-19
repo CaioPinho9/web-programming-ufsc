@@ -181,7 +181,8 @@
             <label>E-mail:</label><input id="login-email" type="text" onfocusout="validarEmail()">
             <label>Senha:</label>
             <div class="passwordSpy">
-                <input id="login-password" type="password" onfocusout="ocultarSenha();validarBotao()">
+                <input id="login-password" type="password"
+                       onfocusout="validaTextoEmBranco(this, null, null);ocultarSenha();validarBotao()">
                 <img id="olho" class="olho"
                      src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png"
                      onclick="toggleSenha()"
@@ -225,16 +226,19 @@
 
 
             <label>Senha:</label>
-            <input id="criarSenha" type="password" onblur="validarSenha();validarBotaoCriar()">
+            <input id="criarSenha" type="password"
+                   onblur="validarSenha(this, 'statusSenha', 'Senha');validarBotaoCriar()">
             <p id="statusSenha"></p>
 
 
             <label>Repita sua senha:</label>
-            <input id="criarSenhaRepetida" type="password" onblur="validarSenha();validarBotaoCriar()">
+            <input id="criarSenhaRepetida" type="password"
+                   onblur="validarSenha(this, 'statusRepitaSenha', 'Senha');validarBotaoCriar()">
             <p id="statusRepitaSenha"></p>
 
             <div id="areaBotaoConta">
-                <input id="criarButton" type="button" disabled value="Criar conta" style="min-width: 100px">
+                <input onclick="criarConta()" id="criarButton" type="button" disabled value="Criar conta"
+                       style="min-width: 100px">
             </div>
 
 
