@@ -203,36 +203,38 @@
         <form>
 
             <label>Nome:</label>
-            <input type="text" onblur="validaTextoEmBranco(this, 'statusNome', 'Nome')">
+            <input id="criarNome" type="text"
+                   onblur="validaTextoEmBranco(this, 'statusNome', 'Nome');validarBotaoCriar()">
             <p id="statusNome"></p>
 
 
             <label>Sobrenome:</label>
-            <input type="text" onblur="validaTextoEmBranco(this, 'statusSobrenome', 'Sobrenome')">
+            <input id="criarSobrenome" type="text"
+                   onblur="validaTextoEmBranco(this, 'statusSobrenome', 'Sobrenome');validarBotaoCriar()">
             <p id="statusSobrenome"></p>
 
 
             <label>CPF:</label>
-            <input type="text" onblur="validarCPF(this)">
+            <input id="criarCpf" type="text" onblur="validarCPF(this);validarBotaoCriar()">
             <p id="statusCPF"></p>
 
 
             <label>E-mail:</label>
-            <input type="text">
+            <input id="criarEmail" type="text" onblur="validarCriarEmail();validarBotaoCriar()">
             <p id="statusEmail"></p>
 
 
             <label>Senha:</label>
-            <input type="password">
+            <input id="criarSenha" type="password" onblur="validarSenha();validarBotaoCriar()">
             <p id="statusSenha"></p>
 
 
             <label>Repita sua senha:</label>
-            <input type="password">
+            <input id="criarSenhaRepetida" type="password" onblur="validarSenha();validarBotaoCriar()">
             <p id="statusRepitaSenha"></p>
 
             <div id="areaBotaoConta">
-                <input type="button" disabled value="Criar conta" style="min-width: 100px">
+                <input id="criarButton" type="button" disabled value="Criar conta" style="min-width: 100px">
             </div>
 
 
