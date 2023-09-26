@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="calculador_primos.js"></script>
+</head>
+<body>
+<script>
+    async function mostrarUltimoPrimoAntesDeValor(valor) {
+        for (let i = 1; i < valor + 1000; i += 1000) {
+            let generated_value = (i <= valor) ? i : valor
+
+            console.log(generated_value)
+
+            setTimeout(() => {
+                console.log(generated_value)
+                gerador.atualizarValoresAte(generated_value)
+            })
+        }
+    }
+</script>
+<input type="button" value="Calcular último primo antes de 1000000" onclick="mostrarUltimoPrimoAntesDeValor(1000000)">
+<p>Resultado:
+<p id="resultado">####</p>
+<progress id="progress"></progress>
+</body>
+</html>
+
